@@ -1,4 +1,4 @@
-**# 我的博客**
+# ** 我的博客**
 
 ```latex
 \{\frac{4}{5}, \sqrt{49},
@@ -7,4 +7,7 @@
 ```
 ```python
 import requests
+url = “https//:baidu.com
+html = requests.get(url).text
+print(html)
 ```
