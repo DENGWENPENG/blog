@@ -44,6 +44,7 @@
     <span><img src="qrcode.jpg"></img></span>
     <span class="">
         <h1>高清图片请点击原图</h1>
+        <h>高清图会自动覆盖原图</h>
         <h1>人数少于20人的省份专业分布</h1>
         <img src="北京0.png" alt="" class="img-responsive img" data-src="北京.png">
         <img src="海南0.png" alt="" class="img-responsive img" data-src="海南.png">
@@ -77,7 +78,7 @@
                 imgurl = ss.attr("data-src")
                 console.log(imgurl)
                 this.src = imgurl
-                alert("高清图片正在加载")
+      
             })
         };
         img();
