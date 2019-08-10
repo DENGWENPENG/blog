@@ -1,66 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-        <title>招生信息可视化分析</title>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <style>
-        body{
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>招生信息可视化分析</title>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
             background-color: #FFEFD5;
         }
-        h1{
+
+        h1 {
             text-align: center;
             color: white;
             font-size: 1.5rem;
         }
-        img{
+
+        img {
             height: 100%;
             width: 100%;
         }
-        </style>
-        <script>
-        var a_imgurl = ["北京.png","宁夏.png","广东.png","新疆.png","江西.png","海南.png","西藏.png","黑龙江.png","subject_2018.png","subject_2019.png","province.png","subject_sd.png"];
-        var a_img=document.getElementsByTagName("img")；
-        var i=0;
-function f_load_img(n){
-if(n>a_imgurl.length-1)return;
-a_img[n].src=a_imgurl[n];
-a_img[n].onload=function(){
-f_load_img(++i)
-}
-}f_load_img(i)
-        </script>
-    </head>
-    <body>
-            <span class="">
-                <h1>人数少于20人的省份专业分布</h1>
-                <img src="" alt="" class="img-responsive"  >
-                <img src="" alt="" class="img-responsive">
-                <img src="" alt="" class="img-responsive">
-                <img src="" alt="" class="img-responsive">
-                <img src="" alt="" class="img-responsive">
-                <img src="" alt="" class="img-responsive">
-                <img src="" alt="" class="img-responsive">
-                <img src="" alt="" class="img-responsive">
-            </span>
-            <span class="">
-                <h1>2018年与2019年招生情况对比</h1>
-                <img src="" alt="" class="img-responsive">
-                <img src="" alt="" class="img-responsive">
-                <h1>按省份分布</h1>
-                <img src="" alt="" class="img-responsive">
-            </span>
-            <span class="">
-                <img src="" alt="" class="imt-responsive",>
-            </span>
-    </body>
+    </style>
+
+</head>
+
+<body>
+    <span class="">
+        <h1>人数少于20人的省份专业分布</h1>
+        <img src="loading.png" alt="" class="img-responsive img" data-src="北京.png">
+        <img src="loading.png" alt="" class="img-responsive img" data-src="海南.png">
+        <img src="loading.png" alt="" class="img-responsive img" data-src="广东.png">
+        <img src="loading.png" alt="" class="img-responsive img" data-src="黑龙江.png">
+        <img src="loading.png" alt="" class="img-responsive img" data-src="江西.png">
+        <img src="loading.png" alt="" class="img-responsive img" data-src="宁夏.png">
+        <img src="loading.png" alt="" class="img-responsive img" data-src="西藏.png">
+        <img src="loading.png" alt="" class="img-responsive img" data-src="新疆.png">
+    </span>
+    <span class="">
+        <h1>2018年与2019年招生情况对比</h1>
+        <img src="loading.png" alt="" class="img-responsive img" data-src="subject_2018.png">
+        <img src="loading.png" alt="" class="img-responsive img" data-src="subject_2019.png">
+        <h1>按省份分布</h1>
+        <img src="loading.png" alt="" class="img-responsive img" data-src="province.png">
+    </span>
+    <span class="">
+        <img src="loading.png" alt="" class="img-responsive img" data-src="subject_sd.png">
+    </span>
+</body>
+<script>
+    function img() {
+            $(".img").click(function () {
+                console.log()
+                num = $(".img").index(this)
+                console.log(num)
+                strr=".img:eq(index)".replace(/index/,num)
+                //$("li:eq(1)")
+                ss = $(strr)
+                imgurl = ss.attr("data-src")
+                console.log(imgurl)
+                this.src = imgurl
+            })
+        };
+        img();
+
+</script>
+
 </html>
