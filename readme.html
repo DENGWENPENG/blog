@@ -27,28 +27,40 @@
             width: 100%;
         }
         </style>
+        <script>
+        var imgurl = ["北京.png","宁夏.png","广东.png","新疆.png","江西.png","海南.png","西藏.png","黑龙江.png","subject_2018.png","subject_2019.png","province.png","subject_sd.png"];
+        var a_img=document.getElementsByTagName("img")；
+        var i=0;
+function f_load_img(n){
+if(n>a_imgurl.length-1)return;
+a_img[n].src=a_imgurl[n];
+a_img[n].onload=function(){
+f_load_img(++i)
+}
+}f_load_img(i)
+        </script>
     </head>
     <body>
             <span class="">
                 <h1>人数少于20人的省份专业分布</h1>
-                <img src="北京.png" alt="" class="img-responsive"  >
-                <img src="宁夏.png" alt="" class="img-responsive">
-                <img src="广东.png" alt="" class="img-responsive">
-                <img src="新疆.png" alt="" class="img-responsive">
-                <img src="江西.png" alt="" class="img-responsive">
-                <img src="海南.png" alt="" class="img-responsive">
-                <img src="西藏.png" alt="" class="img-responsive">
-                <img src="黑龙江.png" alt="" class="img-responsive">
+                <img src="" alt="" class="img-responsive"  >
+                <img src="" alt="" class="img-responsive">
+                <img src="" alt="" class="img-responsive">
+                <img src="" alt="" class="img-responsive">
+                <img src="" alt="" class="img-responsive">
+                <img src="" alt="" class="img-responsive">
+                <img src="" alt="" class="img-responsive">
+                <img src="" alt="" class="img-responsive">
             </span>
             <span class="">
                 <h1>2018年与2019年招生情况对比</h1>
-                <img src="subject_2018.png" alt="" class="img-responsive">
-                <img src="subject_2019.png" alt="" class="img-responsive">
+                <img src="" alt="" class="img-responsive">
+                <img src="" alt="" class="img-responsive">
                 <h1>按省份分布</h1>
-                <img src="province.png" alt="" class="img-responsive">
+                <img src="" alt="" class="img-responsive">
             </span>
             <span class="">
-                <img src="subject_sd.png" alt="" class="imt-responsive",>
+                <img src="" alt="" class="imt-responsive",>
             </span>
     </body>
 </html>
