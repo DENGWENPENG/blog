@@ -26,7 +26,7 @@
 
         h1 {
             text-align: center;
-            color: white;
+            color: red;
             font-size: 1.5rem;
         }
 
@@ -39,9 +39,11 @@
 </head>
 
 <body>
+    
     <h1 style="color:red;height:50%;">关注微信公众号：SUNCOOL<h1>
     <span><img src="qrcode.jpg"></img></span>
     <span class="">
+        <h1>高清图片请点击原图</h1>
         <h1>人数少于20人的省份专业分布</h1>
         <img src="北京0.png" alt="" class="img-responsive img" data-src="北京.png">
         <img src="海南0.png" alt="" class="img-responsive img" data-src="海南.png">
@@ -75,6 +77,7 @@
                 imgurl = ss.attr("data-src")
                 console.log(imgurl)
                 this.src = imgurl
+                alert("高清图片正在加载")
             })
         };
         img();
