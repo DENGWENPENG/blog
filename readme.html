@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>招生信息可视化分析</title>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #FFEFD5;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <span class="">
+        <h1>人数少于20人的省份专业分布</h1>
+        <img src="北京0.png" alt="" class="img-responsive img" data-src="北京.png">
+        <img src="海南0.png" alt="" class="img-responsive img" data-src="海南.png">
+        <img src="广东0.png" alt="" class="img-responsive img" data-src="广东.png">
+        <img src="黑龙江0.png" alt="" class="img-responsive img" data-src="黑龙江.png">
+        <img src="江西0.png" alt="" class="img-responsive img" data-src="江西.png">
+        <img src="宁夏0.png" alt="" class="img-responsive img" data-src="宁夏.png">
+        <img src="西藏0.png" alt="" class="img-responsive img" data-src="西藏.png">
+        <img src="新疆0.png" alt="" class="img-responsive img" data-src="新疆.png">
+    </span>
+    <span class="">
+        <h1>2018年与2019年招生情况对比</h1>
+        <img src="subject_20180.png".png" alt="" class="img-responsive img" data-src="subject_2018.png">
+        <img src="subject_20190.png" alt="" class="img-responsive img" data-src="subject_2019.png">
+        <h1>按省份分布</h1>
+        <img src="province0.png" alt="" class="img-responsive img" data-src="province.png">
+    </span>
+    <span class="">
+        <img src="subject_sd0.png" alt="" class="img-responsive img" data-src="subject_sd.png">
+    </span>
+</body>
+<script>
+    function img() {
+            $(".img").click(function () {
+                console.log()
+                num = $(".img").index(this)
+                console.log(num)
+                strr=".img:eq(index)".replace(/index/,num)
+                
+                ss = $(strr)
+                imgurl = ss.attr("data-src")
+                console.log(imgurl)
+                this.src = imgurl
+            })
+        };
+        img();
+
+</script>
+
+</html>
